@@ -3,79 +3,83 @@
 <center><font face="serif" color="black" size="20">REGISTRATION FORM</h1></center>
 <br>
 <br>
-
+<html>
+<head>
+<title>PT-Form-Reg</title>
 </head>
-<body>
+<body background="/storage/emulated/0/Download/1a__8__generated.jpg">
 
-    <form action="register.php" method="post">
-       
-        <label>Last Name:</label>
-        <input type="text" name="lastname">
-        
-        <label>First Name:</label>
-        <input type="text" name="firstname">
-        
-        <label>M.I.:</label>
-        <input type="text" name="mi" size="2">
-        <br>
-        <br>
+<center>
+    <font face="serif" color="black" size="20"><b>REGISTRATION FORM</b></font>
+</center>
+<br><br>
 
-        <label>Address:</label>
-        <input type="text" name="address" size="50">
-        <br>
-        <br>
-        <label>Birthdate:</label>
-        <input type="date" name="birthdate">
-        
-        <label>Birthplace:</label>
-        <input type="text" name="birthplace">
-        <br>
-        <br>
+<form action="register.php" method="post">
 
-        <label>Civil Status:</label>
-        <input type="radio" name="status" value="Single"> Single
-        <input type="radio" name="status" value="Married"> Married
-        <input type="radio" name="status" value="Widow"> Widow
-        <input type="radio" name="status" value="Divorced"> Divorced
-        <input type="radio" name="status" value="Seperated"> Seperate
-        
-        <br>
-        <br>
+    <label>Last Name:</label>
+    <input type="text" name="lastname" required>
 
-        <label>Gender:</label>
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <br>
-        <br>
+    <label>First Name:</label>
+    <input type="text" name="firstname" required>
 
-        <label>Skills:</label><br>
-        <input type="checkbox" name="skills[]" value="Footwork"> Footwork
-        <input type="checkbox" name="skills[]" value="Grip"> Grip
-        <input type="checkbox" name="skills[]" value="Serve"> Serve
-          <input type="checkbox" name="skills[]" value="Stance"> Stance
-          <input type="checkbox" name="skills[]" value="Basic stroke"> Basic stroke
-          <input type="checkbox" name="skills[]" value="Tactics"> Tactics
-        <br>
-        <br>
+    <label>M.I.:</label>
+    <input type="text" name="mi" size="2" required>
+    <br><br>
 
-     
-        <label>School:</label>
-        <input type="text" name="school"> <label>Year Graduated:</label>
-        <input type="text" name="year graduate" size="6">
-        <br>
-        <label>Elementary:</label>
-        <input type="text" name="Elementary">
-        <br>
-        <label>Junior High School:</label>
-        <input type="text" name="Junior High School">
-        <br>
-        <label>Senior High School:</label>
-        <input type="text" name="Senior High School">
-        <br>
-        <br>
-    </form>
-        <a href="login.html"><input type="Submit"></a>
-        
-    
+    <label>Address:</label>
+    <input type="text" name="address" size="50" required>
+    <br><br>
+
+    <label>Birthdate:</label>
+    <input type="date" name="birthdate" required>
+
+    <label>Birthplace:</label>
+    <input type="text" name="birthplace" required>
+    <br><br>
+
+    <label>Civil Status:</label>
+    <input type="radio" name="status" value="Single" required> Single
+    <input type="radio" name="status" value="Married"> Married
+    <input type="radio" name="status" value="Widow"> Widow
+    <input type="radio" name="status" value="Divorced"> Divorced
+    <input type="radio" name="status" value="Separated"> Separated
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" name="skills[]" value="Footwork" required> Footwork
+    <input type="checkbox" name="skills[]" value="Grip"> Grip
+    <input type="checkbox" name="skills[]" value="Serve"> Serve
+    <input type="checkbox" name="skills[]" value="Stance"> Stance
+    <input type="checkbox" name="skills[]" value="Basic stroke"> Basic stroke
+    <input type="checkbox" name="skills[]" value="Tactics"> Tactics
+    <br><br>
+
+    <label>School:</label>
+    <input type="text" name="school" required> 
+
+    <label>Year Graduated:</label>
+    <input type="text" name="year_graduate" size="6" required>
+    <br><br>
+
+    <label>Elementary:</label>
+    <input type="text" name="elementary" required>
+    <br><br>
+
+    <label>Junior High School:</label>
+    <input type="text" name="junior_high_school" required>
+    <br><br>
+
+    <label>Senior High School:</label>
+    <input type="text" name="senior_high_school" required>
+    <br><br>
+
+    <input type="submit" value="Register">
+</form>
+
 </body>
 </html>
